@@ -6,7 +6,7 @@ import axios from 'axios';
 import { StockData, TimeSeries } from '@/interfaces/data.interface';
 import StockCard from '@/component/Stock';
 
-const page = () => {
+const Page = () => {
   const router = useRouter()
   const [stockData,setStockData] = useState<TimeSeries>({})
   useEffect(()=>{
@@ -43,4 +43,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

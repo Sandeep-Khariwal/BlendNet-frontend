@@ -7,7 +7,7 @@ import {  StockData, TimeSeries } from '@/interfaces/data.interface';
 import toast, {Toaster}  from 'react-hot-toast';
 import { useRouter } from 'next/navigation'
 
-const page = () => {
+const Page = () => {
   const [stockDataArray,setStockDataArray] = useState([])
   const router = useRouter()
 
@@ -120,4 +120,4 @@ const page = () => {
     </>)
 }
 
-export default page
+export default Page
