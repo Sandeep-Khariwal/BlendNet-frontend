@@ -20,7 +20,7 @@ const StockCard:React.FC<StockCardProps>  = ({ date, data }) => {
     // addData[date] = data
     // console.log("data : ",userId,addData);
     
-    const {success, message} = await axios.post('http://localhost:8080/stock/create',{
+    const {success, message} = await axios.post('https://blendnet-backend.onrender.com/stock/create',{
       userId,
       date,data
     }).then((response)=>response.data)
